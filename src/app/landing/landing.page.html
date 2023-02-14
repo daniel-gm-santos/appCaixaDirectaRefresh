@@ -1,0 +1,59 @@
+
+<ion-content>
+  <div class="wrapper">
+    <div class="container">
+
+      <h1 style="text-align:left;">Bom dia, Manel</h1>
+
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label class="ion-no-margin" style="margin:10px;"><h2>Conta Extracto</h2></ion-label>
+          <ion-text slot="end"><strong>1.436,34 EUR</strong></ion-text>
+        </ion-item>      
+      </ion-list>
+
+      <img class="picture" src="assets/imgs/cgd-02.jpg" alt="slide-1" />
+
+      <ion-list lines="none">
+          <ion-item>
+            <ion-icon name="leaf" item-left></ion-icon>
+            <ion-label class="ion-no-margin" style="margin:10px;"><h2>Movimento A</h2></ion-label>
+            <ion-text slot="end"><strong>-0,240 EUR</strong></ion-text>
+          </ion-item>
+          <ion-item>            
+            <ion-icon name="leaf" item-left></ion-icon>
+            <ion-label class="ion-no-margin" style="margin:10px;"><h2>Movimento B</h2></ion-label>
+            <ion-text slot="end"><strong>-23,50 EUR</strong></ion-text>
+          </ion-item>
+          <ion-item>            
+            <ion-icon name="leaf" item-left></ion-icon>
+            <ion-label class="ion-no-margin" style="margin:10px;"><h2>Movimento C</h2></ion-label>
+            <ion-text slot="end" style="color:limegreen"><strong>+128,99 EUR</strong></ion-text>
+          </ion-item>
+          <ion-item>            
+            <ion-icon name="leaf" item-left></ion-icon>
+            <ion-label class="ion-no-margin" style="margin:10px;"><h2>Movimento D</h2></ion-label>
+            <ion-text slot="end"><strong>-45,20 EUR</strong></ion-text>
+          </ion-item>
+          <ion-item>            
+            <ion-icon name="leaf" item-left></ion-icon>
+            <ion-label class="ion-no-margin" style="margin:10px;"><h2>Movimento E</h2></ion-label>
+            <ion-text slot="end" style="color:limegreen"><strong>+25,00 EUR</strong></ion-text>
+          </ion-item>                                       
+      </ion-list>
+
+      <h1 style="text-align:left;">Sugestões para si</h1>
+      <div #sugestion>
+        <div class="image-strip">
+          <img class="image-strip-picture" style="visibility: hidden;" src="assets/imgs/cgd-01.jpg"/>
+          <img class="image-strip-picture" src="assets/imgs/cgd-03.jpg"/>
+          <img class="image-strip-picture" src="assets/imgs/cgd-02.jpg"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="transition-container">
+    <img #transition class="picture" src="assets/imgs/cgd-01.jpg"/>
+  </div>
+</ion-content>

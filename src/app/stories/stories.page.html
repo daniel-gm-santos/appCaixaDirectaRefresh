@@ -1,0 +1,48 @@
+<ion-content>
+  <swiper 
+    [slidesPerView]="1"
+    [autoplay]="{ delay: 4000, disableOnInteraction: true }"
+    [pagination]="{ type: 'bullets', clickable: true }"    
+    >
+    <ng-template swiperSlide>
+      <div class="story-wrapper">
+        <div class="story-container">
+          <img class="picture" src="assets/imgs/cgd-01.jpg" alt="slide-1" />
+          <br>
+          <br>
+          <div class="content">
+            <div class="numbered"> 
+              <ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor arcu, auctor eu ligula at, efficitur sollicitudin turpis. Quisque dignissim commodo tortor, nec mattis arcu blandit et.</li>
+              </ol>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="story-wrapper">
+          <video autoplay muted loop class="video">
+            <source src="assets/imgs/video-01.mp4" type="video/mp4">
+          </video>
+        <div class="content-over">
+          <h1>Lorem ipsum</h1>
+          <p>Duis tortor arcu, auctor eu ligula at, efficitur sollicitudin turpis. Quisque dignissim commodo tortor, nec mattis arcu blandit et.</p>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="story-wrapper">
+        <div class="story-container">
+          <img class="picture" src="assets/imgs/cgd-03.jpg" alt="slide-3" />
+          <br>
+          <div class="content">
+            <h1>Lorem ipsum.</h1>
+            <p>Sed mollis lectus ut magna ullamcorper varius tincidunt sit amet felis. Sed tincidunt viverra ullamcorper. Pellentesque ullamcorper nisi non consequat semper. Praesent nec enim nisi. In cursus blandit massa, at rhoncus sapien tincidunt non.</p>
+            <ion-button shape="round" size="large">X</ion-button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</ion-content>

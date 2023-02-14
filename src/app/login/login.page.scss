@@ -1,0 +1,61 @@
+.under { 
+    position: fixed;
+    background-color: #0971CE;
+    background-image: linear-gradient(to top right, #01213E, #0991eE);
+    z-index: -1;
+    width: 100%;
+    height: 100%;  
+  }
+
+.login-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    min-height: 80%;
+    text-align: center;
+    filter: alpha(opacity=50);
+    display: block;
+    z-index: 999;
+  }
+  
+  .keypad {
+    position: fixed;
+    top:50px;
+    bottom: 50px;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .keypad .wrapper {
+    top: 150px;
+    width: 80%;
+    height: 80%;
+    /* background-color: red; */
+    margin: 0 auto;
+  }
+  
+  .keypad table {
+    /* background-color: orange; */
+    width: 100%;
+  }
+  .keypad table td {
+    /* background-color: red; */
+    text-align: center;
+    
+    padding: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  
+  .keypad table td {
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    user-select: none;
+  }
+  .keypad table tr:last-child td:last-child {
+    padding-top: 0px;
+  }

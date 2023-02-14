@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'stories',
+    loadChildren: () => import('./stories/stories.module').then( m => m.StoriesPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'landing',
+    loadChildren: () => import('./landing/landing.module').then( m => m.LandingPageModule)
+  },
+  {
+    path: 'credit',
+    loadChildren: () => import('./credit/credit.module').then( m => m.CreditPageModule)
+  },
 ];
 
 @NgModule({

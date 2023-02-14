@@ -1,5 +1,7 @@
 {
   "name": "appRefresh",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

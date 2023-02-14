@@ -1,20 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="under">    
   </div>
+  <div class="logo-container">
+    <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" valign="middle">
+          <img #logo class="logo" src="assets/imgs/caixadirecta-icon-splash.svg"/>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div #page class="page-container">
+    <table  width="100%" height="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" valign="top">
+          <img class="avatar" src="assets/imgs/avatar.png"/>
+          <p class="text">Bom dia</p>
+          <p class="text"><strong>Manel</strong></p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" valign="bottom">
+          <div class="dashboard">
+            <table  width="100%" height="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="center">
+                  <img class="dashboard-icon" src="assets/imgs/ic-associar.svg"/>
+                </td>
+                <td align="center">
+                  <img class="dashboard-icon" src="assets/imgs/ic-associar.svg"/>
+                </td>
+                <td align="center">
+                  <img class="dashboard-icon" src="assets/imgs/ic-associar.svg"/>                        
+                </td>
+              </tr>
+              <tr>
+                <td align="center"> 
+                  <span class="text">Opção 1</span>
+                </td>
+                <td align="center">                  
+                  <span class="text">Opção 2</span>
+                </td>
+                <td align="center">                  
+                  <span class="text">Opção 3</span> 
+                </td>
+              </tr>                                                 
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <ion-button (click)="gotoStories()">Go to stories</ion-button>
+    <ion-button (click)="gotoLogin()">Go to Login</ion-button>
+    <ion-button (click)="gotoLanding()">Go to Landing</ion-button>
+  </div>  
 </ion-content>
